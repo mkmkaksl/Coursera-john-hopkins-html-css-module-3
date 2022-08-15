@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    padding: 0;
+    border: 2px solid black;
+    
+}
+.navbar .navbar-header {
+    background-color: gray;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.navbar .navbar-header .navbar-brand {
+    font-size: 2rem;
+}
+#nav #toggler {
+    float: right;
+}
+#nav .navbar-nav {
+    text-align: center;
+    font-size: 1.3em;
+    background-color: aliceblue;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+main .container-fluid .row .main-section:nth-of-type(0) {
+    border: 20px solid red;
+}
+.container-fluid .row .main-section {
+    background-color: gray;
+    min-height: 2000px;
+    max-height: 3000px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 0 40px 20px 40px;
+    border-bottom: 10px solid white;
+}
+.container-fluid .row .main-section:last-child {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .container-fluid .row .main-section {
+        border-right: 20px solid white;
+        border-bottom: none;
+        padding: 0 50px 20px 50px;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .container-fluid .row .main-section {
+        border-right: 20px solid white;
+        border-bottom: 10px solid white;
+        padding: 0 50px 20px 50px;
+    }
+    .container-fluid .row .main-section:last-child {
+        margin-bottom: 50px;
+    }
+}
